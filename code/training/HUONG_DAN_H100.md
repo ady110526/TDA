@@ -20,7 +20,6 @@ JupyterLab → kéo thả `code_train_h100.zip` → File → New → Terminal:
 unzip -q code_train_h100.zip && cd training
 bash h100/chay_h100.sh cai_dat
 ```
-**Chụp phần đầu (GPU, CPU, RAM, ổ đĩa) gửi Claude.**
 
 ## 2. Dữ liệu
 ```bash
@@ -30,14 +29,14 @@ bash h100/chay_h100.sh chuan_hoa_vrtsd
 bash h100/chay_h100.sh ghi_dau_van_tay tda
 bash h100/chay_h100.sh ghi_dau_van_tay vrtsd
 ```
-Số ảnh train/valid/test của TDA phải khớp `split_summary.json` của notebook 03 bản mới. **Chụp màn hình hai lệnh `ghi_dau_van_tay` gửi Claude** (mã cấu hình và dấu vân tay dữ liệu ghi vào bài).
+Số ảnh train/valid/test của TDA phải khớp `split_summary.json` của notebook 03 bản mới.(mã cấu hình và dấu vân tay dữ liệu ghi vào bài).
 
 ## 3. Chạy thử RT-DETR và RF-DETR (mỗi cái 1 epoch, khoảng 5–15 phút)
 ```bash
 bash h100/chay_h100.sh thu_rtdetr
 bash h100/chay_h100.sh thu_rfdetr
 ```
-Code của hai mô hình này **chưa được chạy thử trên GPU thật** (Claude không có GPU); bước này để bắt lỗi trước khi chạy thật. Lỗi thì gửi Claude `logs_h100/thu_rtdetr.log` (+ `results/_smoke/rtdetrv2_r18vd/seed0/train_stdout.log`) hoặc `logs_h100/thu_rfdetr.log`.
+Code của hai mô hình này; bước này để bắt lỗi trước khi chạy thật.
 
 ## 4. Chạy thật
 ```bash
@@ -50,8 +49,7 @@ Bị ngắt: chạy lại đúng lệnh này; lượt đã xong được bỏ qu
 ```bash
 bash h100/chay_h100.sh tien_do
 ```
-**Sau khoảng 30–45 phút, gửi Claude kết quả lệnh này** để tính tổng số giờ và tiền thật.
-Tải dần các file trong `ket_qua_xong/` về máy (chuột phải → Download).
+
 
 ## 6. Khi xong
 ```bash
