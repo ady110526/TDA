@@ -11,7 +11,7 @@
 
 ## 0. Trước khi thuê máy
 1. Drive: chia sẻ `output_split_fit_tau10/split_data_by_box.zip` ở chế độ "Bất kỳ ai có đường liên kết", sao chép link.
-2. VR-TSD: trên Roboflow, project VR-TSD → Versions → v1 → **Download Dataset** → định dạng **YOLOv8** → chọn **"Show download code"** → tab **Terminal** → sao chép **đường link** trong lệnh `curl -L "https://app.roboflow.com/ds/....?key=...."` (chỉ phần trong ngoặc kép).
+2. VR-TSD: trên Roboflow, project VR-TSD → Versions → v2 → **Download Dataset** → định dạng **YOLOv8** → chọn **"Show download code"** → tab **Terminal** → sao chép **đường link** trong lệnh `curl -L "https://app.roboflow.com/ds/....?key=...."` (chỉ phần trong ngoặc kép).
 3. Nếu FPT cho thêm **Persistent disk**, chọn khoảng 50 GB (dừng máy giữa chừng không mất kết quả).
 
 ## 1. Cài đặt (khoảng 10 phút)
