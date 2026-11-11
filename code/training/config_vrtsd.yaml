@@ -14,7 +14,7 @@ dataset:
   # Dấu vân tay của bộ dữ liệu. Lần đầu để trống, chạy:
   #   python train_may1_rtx5050.py --data <thư mục> --check
   # rồi dán giá trị dataset_fingerprint in ra vào đây (BẮT BUỘC trước khi train thật).
-  fingerprint: ""
+  fingerprint: "74b5fe3103dc714d"
 
 run:
   seeds: [0, 1, 2]          # mỗi mô hình chạy 3 seed → báo mean ± std
